@@ -179,8 +179,7 @@
     ]
   },
   "packageFolders": {
-    "/Users/gillesvogelesang/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/Users/gillesvogelesang/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -191,9 +190,6 @@
       "packagesPath": "/Users/gillesvogelesang/.nuget/packages/",
       "outputPath": "/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "/Users/gillesvogelesang/.nuget/NuGet/NuGet.Config"
       ],
@@ -225,10 +221,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

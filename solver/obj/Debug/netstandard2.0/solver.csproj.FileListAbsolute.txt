@@ -1,0 +1,8 @@
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/obj/Debug/netstandard2.0/solver.csprojAssemblyReference.cache
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/obj/Debug/netstandard2.0/solver.AssemblyInfoInputs.cache
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/obj/Debug/netstandard2.0/solver.AssemblyInfo.cs
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/bin/Debug/netstandard2.0/solver.deps.json
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/bin/Debug/netstandard2.0/solver.dll
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/bin/Debug/netstandard2.0/solver.pdb
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/obj/Debug/netstandard2.0/solver.dll
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/obj/Debug/netstandard2.0/solver.pdb

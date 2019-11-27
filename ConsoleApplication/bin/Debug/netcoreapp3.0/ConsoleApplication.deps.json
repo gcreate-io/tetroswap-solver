@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "ConsoleApplication/1.0.0": {
+        "dependencies": {
+          "solver": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleApplication.dll": {}
+        }
+      },
+      "solver/1.0.0": {
+        "runtime": {
+          "solver.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleApplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "solver/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

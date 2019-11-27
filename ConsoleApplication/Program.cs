@@ -1,4 +1,5 @@
 ﻿using System;
+using gcreate.Tetroswap;
 
 namespace ConsoleApplication
 {
@@ -6,7 +7,12 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!!!");
+            Console.WriteLine("Initialize...");
+
+            Solver solver = new Solver("abababab", 2, 4);
+            var result = solver.Solve();
+
+            Console.WriteLine("Result:" + result); // bbaabbaa || aabbaabb
         }
     }
 }

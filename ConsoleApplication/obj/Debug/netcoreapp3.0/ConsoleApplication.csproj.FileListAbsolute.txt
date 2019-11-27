@@ -1,0 +1,14 @@
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/bin/Debug/netcoreapp3.0/ConsoleApplication
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/bin/Debug/netcoreapp3.0/ConsoleApplication.deps.json
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/bin/Debug/netcoreapp3.0/ConsoleApplication.runtimeconfig.json
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/bin/Debug/netcoreapp3.0/ConsoleApplication.runtimeconfig.dev.json
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/bin/Debug/netcoreapp3.0/ConsoleApplication.dll
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/bin/Debug/netcoreapp3.0/ConsoleApplication.pdb
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/bin/Debug/netcoreapp3.0/solver.dll
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/bin/Debug/netcoreapp3.0/solver.pdb
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/obj/Debug/netcoreapp3.0/ConsoleApplication.csprojAssemblyReference.cache
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/obj/Debug/netcoreapp3.0/ConsoleApplication.AssemblyInfoInputs.cache
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/obj/Debug/netcoreapp3.0/ConsoleApplication.AssemblyInfo.cs
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/obj/Debug/netcoreapp3.0/ConsoleApplication.csproj.CopyComplete
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/obj/Debug/netcoreapp3.0/ConsoleApplication.dll
+/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/ConsoleApplication/obj/Debug/netcoreapp3.0/ConsoleApplication.pdb

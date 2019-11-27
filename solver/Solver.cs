@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -32,6 +33,7 @@ namespace gcreate.Tetroswap
             while (queue.Count > 0)
             {
                 var transpositions = queue.Dequeue();
+                Console.WriteLine(GetState(transpositions));
                 if (Match(GetState(transpositions)))
                     return transpositions;
                 foreach (var transposition in GetTranspositions())
@@ -48,7 +50,7 @@ namespace gcreate.Tetroswap
             return null;
         }
 
-        string[] SplitInParts(string s) {
+        IEnumerable<string> SplitInParts(string s) {
             for (var i = 0; i < s.Length; i += 3)
                 yield return s.Substring(i, Math.Min(3, s.Length - i));
         }
@@ -58,17 +60,17 @@ namespace gcreate.Tetroswap
             var state = new StringBuilder(root);
             foreach (var transposition in SplitInParts(transpositions))
             {
-                var v = transposition.Substring(0, 1);
-                var a = transposition.Substring(1, 1);
-                var b = transposition.Substring(2, 1);
+                var v = int.Parse(transposition.Substring(0, 1));
+                var a = int.Parse(transposition.Substring(1, 1));
+                var b = int.Parse(transposition.Substring(2, 1));
 
                 if (v == 0)
                 {
-                    for (int i = 0; i <= columns; i++)
+                    for (int i = 0; i < columns; i++)
                     {
                         var aChar = state[a+(i*rows)];
                         var bChar = state[b+(i*rows)];
-                        if (aChar != " " && bChar != " ")
+                        if (aChar != ' ' && bChar != ' ')
                         {
                             state[a+(i*rows)] = bChar;
                             state[b+(i*rows)] = aChar;
@@ -77,11 +79,11 @@ namespace gcreate.Tetroswap
                 }
                 else 
                 {
-                    for (int i = 0; i <= rows; i++)
+                    for (int i = 0; i < rows; i++)
                     {
                         var aChar = state[a+(i*columns)];
                         var bChar = state[b+(i*columns)];
-                        if (aChar != " " && bChar != " ")
+                        if (aChar != ' ' && bChar != ' ')
                         {
                             state[a+(i*columns)] = bChar;
                             state[b+(i*columns)] = aChar;
@@ -115,12 +117,12 @@ namespace gcreate.Tetroswap
         bool Match(string state)
         {
             var grid  = new StringBuilder(state);
-            var visited = new HashSet();
+            var visited = new HashSet<int>();
 
             for (int i = 0; i < grid.Length; i++)
             {
                 var box = grid[i];
-                if (box != " " && box != "_")
+                if (box != ' ' && box != '_')
                 {
                     var matches = 0;
 
@@ -132,7 +134,7 @@ namespace gcreate.Tetroswap
                         var idx = stack.Pop();
                         if (!visited.Contains(idx))
                         {
-                            var row = Math.Floor(idx / rows);
+                            var row = idx / rows;
                             var col = idx - (columns * row);
                             
                             if (row-1 >= 0 && box == grid[((row-1)*columns)+col]) {
