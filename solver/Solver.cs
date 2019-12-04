@@ -33,7 +33,6 @@ namespace gcreate.Tetroswap
             while (queue.Count > 0)
             {
                 var transpositions = queue.Dequeue();
-                Console.WriteLine(GetState(transpositions));
                 if (Match(GetState(transpositions)))
                     return transpositions;
                 foreach (var transposition in GetTranspositions())
@@ -68,25 +67,31 @@ namespace gcreate.Tetroswap
                 {
                     for (int i = 0; i < columns; i++)
                     {
-                        var aChar = state[a+(i*rows)];
-                        var bChar = state[b+(i*rows)];
+                        var idxA = (a * columns) + i;
+                        var idxB = (b * columns) + i;
+                    
+                        var aChar = state[idxA];
+                        var bChar = state[idxB];
                         if (aChar != ' ' && bChar != ' ')
                         {
-                            state[a+(i*rows)] = bChar;
-                            state[b+(i*rows)] = aChar;
+                            state[idxA] = bChar;
+                            state[idxB] = aChar;
                         }
                     }
                 }
-                else 
+                else
                 {
                     for (int i = 0; i < rows; i++)
                     {
-                        var aChar = state[a+(i*columns)];
-                        var bChar = state[b+(i*columns)];
+                        var idxA = (i * columns) + a;
+                        var idxB = (i * columns) + b;
+
+                        var aChar = state[idxA];
+                        var bChar = state[idxB];
                         if (aChar != ' ' && bChar != ' ')
                         {
-                            state[a+(i*columns)] = bChar;
-                            state[b+(i*columns)] = aChar;
+                            state[idxA] = bChar;
+                            state[idxB] = aChar;
                         }
                     }
                 }
@@ -134,31 +139,30 @@ namespace gcreate.Tetroswap
                         var idx = stack.Pop();
                         if (!visited.Contains(idx))
                         {
-                            var row = idx / rows;
-                            var col = idx - (columns * row);
+                            var row = idx / columns;
+                            var col = idx - (row * columns);
                             
-                            if (row-1 >= 0 && box == grid[((row-1)*columns)+col]) {
+                            if (row-1 > 0 && box == grid[((row-1)*columns)+col]) {
                                 stack.Push(((row-1)*columns)+col);
-                                matches++;
                             }
 
-                            if (col+1 <= columns && box == grid[(row*columns)+col+1]) {
+                            if (col+1 < columns && box == grid[(row*columns)+col+1]) {
                                 stack.Push((row*columns)+col+1);
-                                matches++;
                             }
 
-                            if (row+1 <= rows && box == grid[((row+1)*columns)+col]) {
+                            if (row+1 < rows && box == grid[((row+1)*columns)+col]) {
                                 stack.Push(((row+1)*columns)+col);
-                                matches++;
                             }
 
-                            if (col-1 >= 0 && box == grid[(row*columns)+col-1]) {
+                            if (col-1 > 0 && box == grid[(row*columns)+col-1]) {
                                 stack.Push((row*columns)+col-1);
-                                matches++;
                             }
 
+                            matches++;
                             visited.Add(idx);
                         }
+                        else
+                            matches = 4;
                     }
 
                     if (matches < 4)

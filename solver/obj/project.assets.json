@@ -179,7 +179,8 @@
     ]
   },
   "packageFolders": {
-    "/Users/gillesvogelesang/.nuget/packages/": {}
+    "/Users/gillesvogelesang/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -190,6 +191,9 @@
       "packagesPath": "/Users/gillesvogelesang/.nuget/packages/",
       "outputPath": "/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "/Users/gillesvogelesang/.nuget/NuGet/NuGet.Config"
       ],

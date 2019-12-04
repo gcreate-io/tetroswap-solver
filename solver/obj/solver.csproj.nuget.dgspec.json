@@ -13,6 +13,9 @@
         "packagesPath": "/Users/gillesvogelesang/.nuget/packages/",
         "outputPath": "/Users/gillesvogelesang/Desktop/gcreate.io/Tetroswap/solver-dotnet-core/solver/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/Users/gillesvogelesang/.nuget/NuGet/NuGet.Config"
         ],
